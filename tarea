@@ -1,0 +1,17 @@
+import math
+
+a = float(input("Ingrese un valor para a: "))
+b = float(input("Ingrese un valor para b: "))
+c = float(input("Ingrese un valor para c: "))
+
+discriminante = b**2 - 4*a*c
+
+if discriminante > 0:
+    x1 = (-b + math.sqrt(discriminante)) / (2*a)
+    x2 = (-b - math.sqrt(discriminante)) / (2*a)
+    print(f"Las respuestas son: x1 = {x1}, x2 = {x2}")
+elif discriminante == 0:
+    x = -b / (2*a)
+    print(f"La respuesta es: x = {x}")
+else:
+    print("La ecuación no tiene solución.")
